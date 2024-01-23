@@ -24,6 +24,15 @@
         border: none;
         border-bottom: 2px solid red;
     }
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 14px 0;
+        background-color:rgb(243, 243, 243);
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid red;
+    }
     table{
         background-color: brown;
         width: 80%;
@@ -35,17 +44,14 @@
     <grid>
         <div class="container">
                 <h1>CONTACT ME</h1>
-                <!-- <form style="padding: 0% 10%;text-align: center;" action="mailto:uvanshankar02@gmail.com">
-                    <input type="text" name="Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <input type="text" placeholder="Message">
-                    <br>
-                    <br>
-                    <button type="submit" style="border: 2px solid;padding: 2% 5%;">Submit &nbsp; -></button> -->
-                <!-- </form> -->
-                <form action="https://formsubmit.co/your@email.com" method="POST" >
-                <input type="email" name="email">
+                <!-- <form style="padding: 0% 10%;text-align: center;" action="mailto:uvanshankar02@gmail.com"> -->
+                <form style="padding: 0% 10%;text-align: center;" action="https://formsubmit.co/uvanshankar02@gmail.com" method="POST" >
+                <input type="text" name="Name" placeholder="Name">
+                <input type="text" name="Message" placeholder="Message"> 
+                <input type="email" name="email" placeholder="Email" required>
+                <br>
+                <button type="submit" style="border: 2px solid;padding: 2% 5%;">Submit &nbsp; -></button> 
+                <!-- <button type="submit">submit </button> -->
                 </form>
         </div>
     </grid>

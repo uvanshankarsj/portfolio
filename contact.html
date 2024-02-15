@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        grid {
+  <style>
+     grid {
             display: flex;
             flex-wrap: wrap;
         }
@@ -43,11 +43,19 @@
         h1{
             padding: 0%;
         }
-    </style>
+body{
+  background-color: rgb(243, 243, 243);
+  background-size: cover;
+}
+.upper{
+  background-color: rgb(243, 243, 243);
+  padding-left: 5%;
+}
+  </style>
 </head>
 
-<body style="background-color: rgb(243, 243, 243);background-size: cover;">
-    <grid style="background-color: rgb(243, 243, 243);padding-left: 5%;">
+<body>
+    <grid class="upper">
         <div class="box"
             style="font-size: x-large;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 500;-webkit-text-stroke-width: 1px;display: flex;
             align-items:center;">
@@ -70,8 +78,8 @@
             <li><span><img class="logo" src="github.png"></span>Github</li>
             </ul>
         </div>
-        <div class="box" style="text-align: center;background-image: url(contact\ croped.png);text-align: center;background-color: rgba(189, 189, 189, 0.349);background-position: center;background-repeat: no-repeat;margin: 0 auto;background-position-y: bottom;object-fit:cover"></div>
-            <!-- <img src="contact.png" alt="my image" height="100%" style="height:50%;"> -->
+        <div class="box" style="text-align: center;background-image: url(contact\ croped.png);text-align: center;background-color: rgba(189, 189, 189, 0.349);background-position: center;background-repeat: no-repeat;margin: 0 auto;background-position-y: bottom;object-fit:cover">
+            <img src="https://github.com/uvanshankarsj/portfolio/blob/main/contact.png" alt="my image" height="100%" style="height:50%;">
         </div>
     </grid>
 </body>

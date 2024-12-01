@@ -11,16 +11,16 @@
 
         .box {
             flex: 1;
-            padding: 10px;
+            padding: 1%;
             text-align: left;
-            font-size: 20px;
+            font-size: 150%;
             color:rgb(198, 186, 13);
             background-image:url(background.png);
             /* Updated font size */        
         } 
         a{
             color: rgb(5, 5, 5);
-            padding: 10px;
+            padding: 1%;
         }
         body {
           background-color: rgb(243, 243, 243);
@@ -29,6 +29,19 @@
         .upper {
           background-color: rgb(99,112,129);
           padding-left: 5%;
+        }
+        @media (min-width: 768px) { 
+
+            /* Styles for screens larger than 768px (e.g., desktops) */
+
+            .header-nav { 
+
+                display: flex; 
+
+                flex-direction: row; 
+
+            } 
+
         }
     </style>
 </head>
@@ -53,7 +66,10 @@
     <grid>
         <div class="box" style="padding-top: 3%;padding-left: 5%;color: black;">
             Hello, I'm a passionate <span style="color:blue">full-stack developer</span> currently leveraging my expertise as an automated test engineer at <span style="color: rgb(10, 34, 255);">ICU Medical.</span><br><br>Armed with a B.Tech in <span style="color: rgb(10, 34, 255);;">Computer Science,</span><br>I bring a robust technical foundation and a commitment to delivering innovative solutions in the ever-evolving realm of technology.
-            <H1 style="background-color: rgb(71, 73, 146);text-align: center;padding: 1%;margin-left: 18%;margin-right: 27% ;margin-top:5%;color: rgb(198, 186, 13);">Download CV</H1>
+            <!-- <H3 style="background-color: rgb(71, 73, 146);text-align: center;padding: 1%;margin:auto ;margin-top:5%;color: rgb(198, 186, 13);">Download CV</H3> -->
+            <div style="text-align: center;margin-top:5%;">
+            <button style="background-color: rgb(71, 73, 146);padding:2% 5%;font-size:130%;align-item:center;color: rgb(198, 186, 13);">Download CV</button>
+        </div>
         </div>
         <div class="box" style="text-align: center;align-items: flex-start;">
             <img src="circle profile.png" alt="my image" style="height:90%;width: 50%;">

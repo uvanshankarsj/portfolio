@@ -5,48 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes slidein {
+            from {
+                transform: translatex(-100%);
+            }
+
+            to {
+                transform: translatex(0%);
+            }
+        }
+        @keyframes slidein-right {
+            from {
+                transform: translatex(100%);
+            }
+
+            to {
+                transform: translatex(0%);
+            }
+        }
+        @media (min-width: 768px) { 
+
+            /* Styles for screens larger than 768px (e.g., desktops) */
+
+            .header-nav { 
+
+                display: flex; 
+
+                flex-direction: row; 
+
+            } 
         grid {
             display: flex;
         }
-
         .box {
             flex: 1;
-            padding: 20px;
+            padding: 1%;
             text-align: left;
-            font-size: 20px; /* Updated font size */
-        }
+            font-size: 150%;
+            color:rgb(198, 186, 13);
+            background-image:url(background.png);
+/*            transform*/
+            /* Updated font size */        
+        } 
+        
         a{
             color: rgb(5, 5, 5);
-            padding: 10px;
+            padding: 1%;
+        }
+        body {
+          background-color: rgb(243, 243, 243);
+          background-size: cover;
+          overflow-x: hidden;
+        }
+        .upper {
+          background-color: rgb(99,112,129);
+          padding-left: 5%;
+        }
+        .download{
+            background-color: rgb(71, 73, 146);
+            padding:2% 5%;
+            font-size:130%;
+            align-item:center;
+            color: rgb(198, 186, 13);
+            transition:  background-color 0.5s ease-out;
+        }
+        .download:hover{
+            background-color: rgb(250, 250, 250);
+            padding:2% 5%;
+            font-size:130%;
+            align-item:center;
+            color: rgb(198, 186, 13)
+        }
+        .welcome{
+            padding: 2% 5%;
+        }
+        .boxanimation{
+            animation-name: slidein;
+            animation-duration:2s;
+            animation-timing-function: ease-out;
+        }
+        .boxanimation2{
+            animation-name: slidein-right;
+            animation-duration: 2s;
+        }
         }
     </style>
 </head>
 
-<body style="background-color:rgb(243, 243, 243);">
-
-    <grid style="background-color: rgb(243, 243, 243);padding-left: 5%;">
-        <div class="box"
-            style="font-size: x-large;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 500;-webkit-text-stroke-width: 1px;">
+<body>
+    <grid class="upper">
+        <div class="box" style="font-size: x-large;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 500;-webkit-text-stroke-width: 1px;display: flex;align-items:center;">
             <img src="logo.jpg" style="width: 50px;height: 30px;padding-right: 15px;" alt=""></img>UVAN SHANKAR SJ</div>
         <div class="box" style="text-align: right;">
+            <a href="./main.html">Home</a>
             <a href="./work.html">work</a>
             <a>resume</a>
             <a href="./contact.html">contact</a>
         </div>
     </grid>
-    
-    <grid style="padding: 2% 5%;">
+    <grid class="welcome boxanimation">
         <div style="font-size: 50px;text-align: left;"><span class="wave">👋🏾</span></div>
         <div style="font-size: 70px;text-align: left;padding-left: 3%;">
             <div><b>HI there,</b><br>it's nice to meet you.</div>
         </div>
     </grid>
-
     <grid>
-        <div class="box" style="padding-top: 3%;padding-left: 5%;">
+        <div class="box boxanimation" style="padding-top: 3%;padding-left: 5%;color: black;">
             Hello, I'm a passionate <span style="color:blue">full-stack developer</span> currently leveraging my expertise as an automated test engineer at <span style="color: rgb(10, 34, 255);">ICU Medical.</span><br><br>Armed with a B.Tech in <span style="color: rgb(10, 34, 255);;">Computer Science,</span><br>I bring a robust technical foundation and a commitment to delivering innovative solutions in the ever-evolving realm of technology.
+            <div style="text-align: center;margin-top:5%;">
+            <button class="Download">Download CV</button>
         </div>
-        <div class="box" style="text-align: center;">
+        </div>
+        <div class="box boxanimation2" style="text-align: center;align-items: flex-start;">
             <img src="circle profile.png" alt="my image" style="height:90%;width: 50%;">
         </div>
     </grid>
